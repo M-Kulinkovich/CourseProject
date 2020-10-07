@@ -1,0 +1,98 @@
+$width: 275px;
+
+.size {
+  z-index: 99999999;
+  min-width: $width;
+  max-width: $width;
+}
+
+Toast {
+  z-index: 99999999;
+}
+
+.position {
+  z-index: 99999999;
+
+  $top: 85px;
+  $bottom: 15px;
+  $right: 20px;
+  $left: 20px;
+
+  $anim-time: 500ms;
+
+  @mixin left {
+    position: fixed;
+    left: $left;
+
+    @keyframes from-left {
+      from {
+        left: -$width;
+      }
+      to {
+        left: $left;
+      }
+    }
+
+    animation: from-left $anim-time ease-in-out;
+  }
+
+  @mixin right {
+    position: fixed;
+    right: $right;
+
+    @keyframes from-right {
+      from {
+        right: -$width;
+      }
+      to {
+        right: $right;
+      }
+    }
+
+    animation: from-right $anim-time ease-in-out;
+  }
+
+  &-tr {
+    top: $top;
+    @include right;
+  }
+
+  &-tl {
+    top: $top;
+    @include left;
+  }
+
+  &-bl {
+    bottom: $bottom;
+    @include left;
+  }
+
+  &-br {
+    bottom: $bottom;
+    @include right;
+  }
+}
+
+.header {
+  $headerTextColor: white;
+  $blueColor: #3574ff;
+  $greenColor: #00c911;
+  $redColor: #ff283c;
+
+  @mixin header($bgColor) {
+    color: $headerTextColor;
+    background-color: $bgColor;
+  }
+
+  &-info {
+    @include header($blueColor);
+  }
+
+  &-success {
+    @include header($greenColor);
+  }
+
+  &-warning {
+    @include header($redColor);
+  }
+}

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+$table-color: #50AAE7;
+$row-color: #c7d5fe;
+$row-hover-color: #54bcfd;
+
+.icon {
+  display: inline-block;
+  color: white;
+
+  &-search {
+    margin: 0 8px 2px 4px;
+  }
+
+  &-arrow {
+    margin: 0 4px 0 4px;
+  }
+
+  &-info {
+    position: relative;
+    width: 100%;
+    font-size: 40px;
+  }
+}
+
+.search {
+  display: inline-block;
+  width: 220px;
+  padding: 5px 5px 0px 5px;
+  border-radius: 5px 5px 0 0;
+  background: $table-color;
+}
+
+.caption {
+  display: inline-flex;
+  margin: 4px 4px 4px 8px;
+  height: 20px;
+
+  font-family: 'Oswald', sans-serif;
+  color: $table-color;
+  text-align: right;
+}
+
+.table {
+  &-frame {
+    display: table;
+    padding: 5px;
+    border-top-right-radius: 5px;
+    background: $table-color;
+    font-size: 15px;
+  }
+
+  &-row {
+    display: flex;
+    background: $row-color;
+
+    &-head {
+      display: flex;
+      background: $table-color;
+    }
+
+    &-empty {
+      padding: 10px;
+      border: solid white;
+      border-width: 1px 1px 0 1px;
+      font-family: 'Oswald', sans-serif;
+      text-align: center;
+      font-style: oblique;
+      background: $row-color;
+    }
+
+    &:hover {
+      background: $row-hover-color;
+    }
+  }
+
+  &-cell {
+    display: inline-block;
+    padding: 0 5px 0 5px;
+    border: solid white;
+    border-width: 1px 1px 0 1px;
+
+    &-head {
+      display: inline-block;
+      padding: 5px 5px 3px 5px;
+      text-align: center;
+      font-family: 'Oswald', sans-serif;
+      color: white;
+      cursor: pointer;
+      border-bottom: 2px solid $table-color;
+
+      &:hover {
+        position: relative;
+        border-bottom-color: white;
+      }
+    }
+  }
+}

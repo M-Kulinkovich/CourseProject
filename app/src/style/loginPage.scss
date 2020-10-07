@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px;
+}
+
+.loginForm {
+  width: 320px;
+}
+
+.ImgLoading{
+  margin: 10px;
+}
+
+.loginButton {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: center;
+  width: 100%;
+  margin: 30px;
+}
+

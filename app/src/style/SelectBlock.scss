@@ -1,0 +1,200 @@
+@import "datepicker";
+
+$blueColor: #4267e7;
+
+.page {
+}
+
+$table-color: #50AAE7;
+
+.icon {
+  display: inline-block;
+  color: white;
+
+  &-delete {
+    color: $table-color;
+    position: relative;
+    width: 100%;
+    font-size: 20px;
+  }
+}
+
+.newReportButton {
+  padding-top: 10px;
+}
+
+.savingBlock {
+  //display: block;
+  //background: blue;
+}
+
+.report {
+    position: relative;
+    top: 0px;
+    padding: 15px;
+
+  &-info {
+    display: block;
+    position: relative;
+    left: 100;
+    padding: 10px;
+    position: relative;
+  }
+
+  &-records {
+
+  }
+}
+
+.table {
+  width: 60%;
+  padding: 10px;
+}
+
+.reportItem {
+  display: table-row;
+  border : solid 1px;
+
+  &-title {
+    display: table-cell;
+    width: 120px;
+    padding: 2px;
+
+    font-weight: 700;
+    color: $blueColor;
+  }
+
+  &-clear {
+    font-weight: 600;
+    color: $blueColor;
+  }
+
+  &-checkBox {
+    display: table-cell;
+  }
+
+  &-dropdown {
+    display: table-cell;
+    width: 200px;
+  }
+
+  &-datePicker {
+    display: block;
+    width: 320px;
+    padding: 2px 0 5px 0;
+  }
+}
+
+.selectBlock {
+  position: fixed;
+  top: 100px;
+  right: 0px;
+  padding: 0 15px 0 15px;
+}
+
+.selections {
+  padding: 0 5px 0 5px;
+  border: solid 3px $blueColor;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.selectItem {
+  display: table-row;
+  border : solid 1px;
+
+  &-title {
+    display: table-cell;
+    width: 120px;
+    padding: 5px;
+
+    font-weight: 700;
+    color: $blueColor;
+  }
+
+  &-clear {
+    font-weight: 600;
+    color: $blueColor;
+  }
+
+  &-checkBox {
+    display: table-cell;
+  }
+
+  &-dropdown {
+    display: table-cell;
+    width: 180px;
+    padding: 5px;
+  }
+
+  &-datePicker {
+    display: block;
+    width: 320px;
+    padding: 5px 0 5px 0;
+  }
+
+  &-add {
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
+}
+
+.line {
+    display: inline-block;
+}
+
+hr {
+  margin: 0px;
+}
+
+.buttonBlock {
+  display: table-row;
+  //border : solid 1px;
+
+  &-title {
+    display: table-cell;
+    width: 120px;
+    padding: 2px;
+
+    font-weight: 700;
+    color: $blueColor;
+  }
+
+  &-clear {
+    font-weight: 600;
+    color: $blueColor;
+  }
+
+  &-checkBox {
+    display: table-cell;
+    padding-left: 15px;
+  }
+
+  &-button {
+    display: table-cell;
+    width: 200px;
+    padding-left: 15px;
+  }
+
+  &-back {
+    display: table-cell;
+    width: 600px;
+    //padding: 2px 0 5px 300px;
+
+    padding-left: 450px;
+  }
+}
+
+.text {
+  //padding-top: 2px;
+  //vertical-align: middle;
+}
+
+.DateInput_input {
+  @extend .DateInput_input;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  padding: 0;
+}

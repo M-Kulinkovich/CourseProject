@@ -1,0 +1,33 @@
+$blueColor: #4267e7;
+
+.report {
+    margin: auto;
+}
+
+.confirmBlock {
+  display: table-row;
+}
+
+.checkBox {
+  display: table-cell;
+  padding: 5px;
+
+  &-label {
+    display: table-cell;
+    padding: 5px;
+  }
+}
+
+.button {
+  &-send {
+    display: table-cell;
+    padding: 5px;
+  }
+
+  &-back {
+    display: table-cell;
+    margin: 5px;
+
+    width: 660px;
+  }
+}

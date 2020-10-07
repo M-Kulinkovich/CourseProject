@@ -1,0 +1,39 @@
+@import './../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+html, body, #root {
+  height: 100%;
+}
+
+.MainBox {
+  height: 100%;
+}
+
+.boxColor {
+  color: blueviolet;
+}
+
+.content {
+  padding: 80px;
+}
+
+.componentBox {
+  background: bisque;
+  padding: 10px;
+  display: inline-block;
+  border: 10px;
+}
+
+.body {
+  box-sizing: border-box;
+  padding-top: 80px;
+  min-height: calc(100% - 40px);
+}
+
+.footerBox {
+  display: flex;
+  justify-content: center;
+  background: lightslategrey;
+  text-align: center;
+  height: 40px;
+  border-top: 1px solid;
+}

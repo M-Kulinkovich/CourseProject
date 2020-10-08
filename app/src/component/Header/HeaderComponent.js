@@ -17,6 +17,7 @@ class HeaderComponent extends Component {
             <div className='header'>
                 <div >
                     <img className='logoBox' src={logo} alt="logo"/>
+                    <b className='logoText' > Monitoring employee activity</b>
                 </div>
                 <div className='dropDownBox'>
                     <DropdownButton className='dropDownComponent' title='components'>
@@ -25,11 +26,6 @@ class HeaderComponent extends Component {
                                 All Reports
                             </Link>
                         </Dropdown.Item>
-                        {/*<Dropdown.Item eventKey='4'>*/}
-                        {/*    <Link to='/reports'>*/}
-                        {/*        Reports*/}
-                        {/*    </Link>*/}
-                        {/*</Dropdown.Item>*/}
                         <Dropdown.Item eventKey='2'>
                             <Link to='/report?mode=create'>
                                 Create report
@@ -40,14 +36,9 @@ class HeaderComponent extends Component {
                                 Date filter
                             </Link>
                         </Dropdown.Item>
-                        {/*<Dropdown.Item eventKey='5'>*/}
-                        {/*    <Link to='/checkBox'>*/}
-                        {/*        CheckBox*/}
-                        {/*    </Link>*/}
-                        {/*</Dropdown.Item>*/}
                     </DropdownButton>
-                    <DropdownButton className='dropDownComponent' title='Help'>
-                        <Dropdown.Item eventKey='3'>Help</Dropdown.Item>
+                    <DropdownButton className='dropDownComponent' title='Documents'>
+                        <Dropdown.Item eventKey='3'>Creators</Dropdown.Item>
                     </DropdownButton>
                 </div>
                 <button onClick={this.handleClick} className='ButtonLogout'>

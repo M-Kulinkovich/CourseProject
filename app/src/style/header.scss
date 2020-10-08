@@ -4,7 +4,7 @@
   align-items: center;
   padding: 0 20px;
   background: lightblue;
-  height: 80px;
+  height: 100px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -19,8 +19,27 @@
 }
 
 .logoBox{
-  width: 30%;
-  height: 30%;
+  width: 15%;
+  height: 15%;
+}
+
+.logoText{
+  font-size: x-large;
+  text-shadow:
+    -1px -1px #FFF,
+    -2px -2px #FFF,
+    -1px 1px #FFF,
+    -2px 2px #FFF,
+    1px 1px #FFF,
+    2px 2px #FFF,
+    1px -1px #FFF,
+    2px -2px #FFF,
+    -3px -3px 2px #BBB,
+    -3px 3px 2px #BBB,
+    3px 3px 2px #BBB,
+    3px -3px 2px #BBB;
+  color: steelblue;
+  transition: all 1s;
 }
 
 .dropDownBox {

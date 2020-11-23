@@ -20,7 +20,7 @@ class HeaderComponent extends Component {
                     <b className='logoText' > Monitoring employee activity</b>
                 </div>
                 <div className='dropDownBox'>
-                    <DropdownButton className='dropDownComponent' title='components'>
+                    <DropdownButton className='dropDownComponent' title='Components'>
                         <Dropdown.Item eventKey='1'>
                             <Link to='/'>
                                 All Reports
@@ -38,7 +38,9 @@ class HeaderComponent extends Component {
                         </Dropdown.Item>
                     </DropdownButton>
                     <DropdownButton className='dropDownComponent' title='Documents'>
-                        <Dropdown.Item eventKey='3'>Creators</Dropdown.Item>
+                        <Dropdown.Item eventKey='3'>
+                            Creators
+                        </Dropdown.Item>
                     </DropdownButton>
                 </div>
                 <button onClick={this.handleClick} className='ButtonLogout'>

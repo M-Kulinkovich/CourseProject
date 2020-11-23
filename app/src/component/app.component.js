@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import "../style/app.scss"
-import LoginPageContainer from "./LoginPage/LoginPageContainer";
+import Login from "./LoginPage/LoginForm";
 import {BrowserRouter, Route} from "react-router-dom";
 import MainRoutes from "./MainRoutes";
 import ServerErrorComponent from "./ServerError/ServerErrorComponent";
@@ -34,13 +34,13 @@ class MyComponent extends Component {
     render() {
         return (
             <BrowserRouter>
-                {/* {
+                {
                     this.state.serverError === true && <div>
                         <ServerErrorComponent/>
                     </div>
-                } */}
+                }
                 {
-                    // this.state.serverError === false && this.state.loggedIn === true &&
+                     this.state.serverError === false && this.state.loggedIn === true &&
                     <div className={'MainBox'}>
                         <Route
                             component={MainRoutes}
@@ -48,10 +48,10 @@ class MyComponent extends Component {
                     </div>
                 }
                 {
-                    // this.state.serverError === false && this.state.loggedIn === false &&
+                    this.state.serverError === false && this.state.loggedIn === false &&
                     <div>
                         <Route
-                            component={LoginPageContainer}
+                            component={Login}
                         />
                     </div>
                 }

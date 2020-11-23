@@ -22,11 +22,6 @@ class MainRoutes extends Component {
                         component={ReportsContainer}
                     />
                     <Route
-                        path="/datePicker"
-                        title="Календарь"
-                        component={DatePickerComponent}
-                    />
-                    <Route
                         path="/table"
                         title="Таблица"
                         component={TableTestComponent}
